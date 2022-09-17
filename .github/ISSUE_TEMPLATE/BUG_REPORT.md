@@ -1,6 +1,6 @@
 ---
 name: 🐛 Bug Report
-about: Create an issue report.
+about: Create a report to help us improve Strapi.
 ---
 
 <!--
@@ -13,35 +13,45 @@ https://guides.github.com/features/mastering-markdown/
 
 Please ensure you have also read and understand the contributing guide.
 
-https://github.com/strapi/strapi/blob/master/CONTRIBUTING.md#reporting-an-issue
+https://github.com/strapi/strapi/blob/main/CONTRIBUTING.md#reporting-an-issue
 -->
 
-**Describe the bug**
+## Bug report
+
+### Required System information
+
+<!-- Please ensure you are using the Node LTS version (v14 or v16 or v18) -->
+<!-- Strapi v3 is not supported unless it is a critical/high security issue -->
+
+- Node.js version:
+- NPM version:
+- Strapi version:
+- Database:
+- Operating system:
+
+### Describe the bug
+
 A clear and concise description of what the bug is.
 
-**Steps to reproduce the behavior**
+### Steps to reproduce the behavior
 
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
+### Expected behavior
+
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+### Screenshots
+
 If applicable, add screenshots to help explain your problem.
 
-**Code snippets**
+### Code snippets
+
 If applicable, add code samples to help explain your problem.
 
-**System**
+### Additional context
 
-- Node.js version: <!-- Please ensure you are using the Node LTS version (v12) -->
-- NPM version:
-- Strapi version: <!-- Beta and Alpha versions are no longer supported -->
-- Database:
-- Operating system:
-
-**Additional context**
 Add any other context about the problem here.

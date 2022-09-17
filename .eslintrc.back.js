@@ -1,22 +1,41 @@
+'use strict';
+
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'prettier',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:node/recommended',
-  ],
-  env: {
-    es6: true,
-    node: true,
-    jest: true,
+  extends: '@strapi/eslint-config/back',
+  parserOptions: {
+    ecmaVersion: 2020,
   },
   globals: {
     strapi: false,
   },
   rules: {
-    'node/no-unpublished-require': 0,
-    'require-atomic-updates': 0,
-    'no-process-exit': 0,
+    'import/no-dynamic-require': 'off',
+    'global-require': 'off',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          'packages/admin-test-utils/**/*.js',
+          'packages/generators/admin/**/*.js',
+          'scripts/**/*.js',
+          '**/test/**/*.js',
+          '**/tests/**/*.js',
+          '**/__tests__/**/*.js',
+          '**/__mocks__/**/*.js',
+        ],
+      },
+    ],
+    'prefer-destructuring': ['error', { AssignmentExpression: { array: false } }],
+    'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
+    'no-continue': 'warn',
+    'no-process-exit': 'off',
+    'no-loop-func': 'off',
+    'no-param-reassign': [
+      'error',
+      {
+        props: false,
+      },
+    ],
   },
 };
